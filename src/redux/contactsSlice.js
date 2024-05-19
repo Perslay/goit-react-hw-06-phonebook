@@ -6,30 +6,8 @@ const contactsSlice = createSlice({
   name: 'contacts',
   initialState: contactsInitialState,
   reducers: {
-    // addContact(state, action) {
-    //   const newName = name;
-    //   const newNumber = number;
-    //   const nameExists = contacts.some(contact => contact.name === newName);
-    //   if (nameExists) {
-    //     alert(newName + ' is already in contacts.');
-    //   } else {
-    //     setContacts(prevContacts => [
-    //       ...prevContacts,
-    //       {
-    //         name: newName,
-    //         number: newNumber,
-    //         id: nanoid(),
-    //       },
-    //     ]);
-    //   }
-    // },
     addContact: {
       reducer(state, action) {
-        //   const nameExists = contacts.some(contact => contact.name === newName);
-
-        //   if (nameExists) {
-        //     alert(newName + ' is already in contacts.');
-        //   } else {
         state.push(action.payload);
       },
       prepare(name, number) {

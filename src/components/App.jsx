@@ -11,6 +11,8 @@ export const App = () => {
   // const [name, setName] = useState('');
   // const [number, setNumber] = useState('');
 
+  // -----------------------
+
   // useEffect(() => {
   //   // get from local storage
   //   const savedContacts = localStorage.getItem('contacts');
@@ -22,6 +24,8 @@ export const App = () => {
   //   // remove from or add to local storage
   //   localStorage.setItem('contacts', JSON.stringify(contacts));
   // }, [contacts]);
+
+  // -----------------------
 
   // const handleName = evt => {
   //   setName(evt.target.value);
@@ -35,32 +39,6 @@ export const App = () => {
   //   setFilter(evt.target.value);
   // };
 
-  // const add = event => {
-  //   event.preventDefault();
-
-  //   const form = event.currentTarget;
-
-  //   const newName = name;
-  //   const newNumber = number;
-
-  //   const nameExists = contacts.some(contact => contact.name === newName);
-
-  //   if (nameExists) {
-  //     alert(newName + ' is already in contacts.');
-  //   } else {
-  //     setContacts(prevContacts => [
-  //       ...prevContacts,
-  //       {
-  //         name: newName,
-  //         number: newNumber,
-  //         id: nanoid(),
-  //       },
-  //     ]);
-  //   }
-
-  //   form.reset();
-  // };
-
   // -----------------------
 
   // const deleteContact = id => {
@@ -72,9 +50,6 @@ export const App = () => {
     <div className={css.appContainer}>
       <h1 className={css.firstHeading}>Phonebook</h1>
       <ContactForm
-      // add={add}
-      // nameInputId={nanoid()}
-      // numberInputId={nanoid()}
       // handleName={handleName}
       // handleNumber={handleNumber}
       />
