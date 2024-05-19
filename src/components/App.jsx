@@ -39,13 +39,6 @@ export const App = () => {
   //   setFilter(evt.target.value);
   // };
 
-  // -----------------------
-
-  // const deleteContact = id => {
-  //   const updatedContacts = contacts.filter(contact => contact.id !== id);
-  //   setContacts(updatedContacts);
-  // };
-
   return (
     <div className={css.appContainer}>
       <h1 className={css.firstHeading}>Phonebook</h1>
@@ -61,7 +54,6 @@ export const App = () => {
       <ContactList
       // contacts={contacts}
       // filter={filter}
-      // deleteContact={deleteContact}
       />
     </div>
   );
