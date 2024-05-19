@@ -35,10 +35,6 @@ export const App = () => {
   //   setNumber(evt.target.value);
   // };
 
-  // const handleFilter = evt => {
-  //   setFilter(evt.target.value);
-  // };
-
   return (
     <div className={css.appContainer}>
       <h1 className={css.firstHeading}>Phonebook</h1>
@@ -47,14 +43,8 @@ export const App = () => {
       // handleNumber={handleNumber}
       />
       <h2 className={css.secondHeading}>Contacts</h2>
-      <Filter
-      // handleFilter={handleFilter}
-      // filterInputId={nanoid()}
-      />
-      <ContactList
-      // contacts={contacts}
-      // filter={filter}
-      />
+      <Filter />
+      <ContactList />
     </div>
   );
 };

@@ -3,8 +3,8 @@ import { getContacts } from '../redux/selectors';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../redux/contactsSlice';
 // import PropTypes from 'prop-types';
-import css from '../styles/ContactForm.module.css';
 import { nanoid } from '@reduxjs/toolkit';
+import css from '../styles/ContactForm.module.css';
 
 export const ContactForm = () => {
   const nameInputId = nanoid();
@@ -71,9 +71,6 @@ export const ContactForm = () => {
 };
 
 // ContactForm.propTypes = {
-//   add: PropTypes.func.isRequired,
-//   nameInputId: PropTypes.string.isRequired,
-//   numberInputId: PropTypes.string.isRequired,
 //   handleName: PropTypes.func.isRequired,
 //   handleNumber: PropTypes.func.isRequired,
 // };
