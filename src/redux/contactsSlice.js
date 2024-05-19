@@ -25,7 +25,11 @@ const contactsSlice = createSlice({
     // },
     addContact: {
       reducer(state, action) {
-        // for now without checking if name exists
+        //   const nameExists = contacts.some(contact => contact.name === newName);
+
+        //   if (nameExists) {
+        //     alert(newName + ' is already in contacts.');
+        //   } else {
         state.push(action.payload);
       },
       prepare(name, number) {
