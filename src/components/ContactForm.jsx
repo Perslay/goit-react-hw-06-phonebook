@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 import { getContacts } from '../redux/selectors';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../redux/contactsSlice';
-// import PropTypes from 'prop-types';
 import { nanoid } from '@reduxjs/toolkit';
 import css from '../styles/ContactForm.module.css';
 
@@ -69,8 +68,3 @@ export const ContactForm = () => {
     </form>
   );
 };
-
-// ContactForm.propTypes = {
-//   handleName: PropTypes.func.isRequired,
-//   handleNumber: PropTypes.func.isRequired,
-// };

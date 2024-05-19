@@ -6,42 +6,10 @@ import { ContactForm } from './ContactForm';
 import { Filter } from './Filter';
 
 export const App = () => {
-  // const [contacts, setContacts] = useState([]);
-  // const [filter, setFilter] = useState('');
-  // const [name, setName] = useState('');
-  // const [number, setNumber] = useState('');
-
-  // -----------------------
-
-  // useEffect(() => {
-  //   // get from local storage
-  //   const savedContacts = localStorage.getItem('contacts');
-  //   const parsedContacts = JSON.parse(savedContacts);
-  //   setContacts(parsedContacts || []);
-  // }, []);
-
-  // useEffect(() => {
-  //   // remove from or add to local storage
-  //   localStorage.setItem('contacts', JSON.stringify(contacts));
-  // }, [contacts]);
-
-  // -----------------------
-
-  // const handleName = evt => {
-  //   setName(evt.target.value);
-  // };
-
-  // const handleNumber = evt => {
-  //   setNumber(evt.target.value);
-  // };
-
   return (
     <div className={css.appContainer}>
       <h1 className={css.firstHeading}>Phonebook</h1>
-      <ContactForm
-      // handleName={handleName}
-      // handleNumber={handleNumber}
-      />
+      <ContactForm />
       <h2 className={css.secondHeading}>Contacts</h2>
       <Filter />
       <ContactList />
