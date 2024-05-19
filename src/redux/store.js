@@ -7,7 +7,6 @@ const saveToLocalStorage = state => {
     const { filter, ...stateWithoutFilter } = state;
     const serializedState = JSON.stringify(stateWithoutFilter);
     localStorage.setItem('persistentState', serializedState);
-    console.log('saved state to localstorage:', serializedState);
   } catch (error) {
     console.warn(error);
   }
@@ -16,7 +15,6 @@ const saveToLocalStorage = state => {
 const getFromLocalStorage = () => {
   try {
     const serializedState = localStorage.getItem('persistentState');
-    console.log('loaded state from localstorage:', serializedState);
     if (serializedState === null) {
       return undefined;
     }
